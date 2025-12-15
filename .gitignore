@@ -15,5 +15,5 @@ yarn-error.log*
 
 # 5. (선택사항) 데이터 파일이나 업로드 된 이미지
 # 만약 posts.json에 글이 계속 쌓이는 게 싫다면 주석을 푸세요(# 제거).
-# posts.json
-# public/uploads/
+posts.json
+public/uploads/

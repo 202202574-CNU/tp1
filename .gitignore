@@ -1,0 +1,19 @@
+# 1. 의존성 모듈 (제일 중요! 절대 올리면 안 됨)
+node_modules/
+
+# 2. 환경변수 파일 (비밀번호나 API 키가 들어있어서 해킹 위험)
+.env
+
+# 3. 운영체제 시스템 파일 (맥/윈도우가 자동으로 만드는 잡동사니)
+.DS_Store
+Thumbs.db
+
+# 4. 에러 로그들
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 5. (선택사항) 데이터 파일이나 업로드 된 이미지
+# 만약 posts.json에 글이 계속 쌓이는 게 싫다면 주석을 푸세요(# 제거).
+# posts.json
+# public/uploads/

@@ -1,0 +1,183 @@
+/* css/mypage.css */
+
+/* 마이페이지 전체 컨테이너 */
+.mypage-container { 
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 30px; 
+    background: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+/* 프로필 헤더 */
+.profile-header { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    padding-bottom: 20px; 
+    border-bottom: 2px solid #2E7D32; 
+}
+
+.profile-header h2 { 
+    margin: 0; 
+    font-size: 32px; 
+    color: #333; 
+}
+
+/* 탭 네비게이션 */
+.tab-nav { 
+    display: flex; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 20px; 
+}
+
+.tab-nav button { 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border: none; 
+    background: #f8f8f8; 
+    transition: background 0.2s; 
+    font-size: 16px; 
+    border-radius: 5px 5px 0 0; 
+}
+
+.tab-nav button.active { 
+    background: #2E7D32; 
+    color: white; 
+    border-bottom: 2px solid #2E7D32; 
+    font-weight: bold; 
+}
+
+/* 북마크/게시물 카드 스타일 */
+.post-card-mypage { 
+    border: 1px solid #eee; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    margin-bottom: 15px; 
+    display: flex; 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.post-card-mypage:hover { 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.post-card-img { 
+    width: 100px; 
+    height: 100px; 
+    background-size: cover; 
+    background-position: center; 
+    flex-shrink: 0; 
+}
+
+.post-card-info { 
+    padding: 15px; 
+    flex-grow: 1; 
+}
+
+.post-card-info h4 { 
+    margin: 0 0 5px 0; 
+    font-size: 18px; 
+    color: #333; 
+}
+
+.post-card-info p { 
+    margin: 0; 
+    font-size: 14px; 
+    color: #555; 
+}
+
+/* 댓글 목록 스타일 */
+.comment-list-item { 
+    border: 1px solid #f0f0f0; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.comment-list-item p { 
+    margin: 0 0 5px 0; 
+}
+
+.comment-list-item .post-link { 
+    font-size: 12px; 
+    color: #2E7D32; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.comment-list-item .comment-date { 
+    font-size: 12px; 
+    color: #aaa; 
+    float: right; 
+}
+
+/* ---------------------------------- */
+/* 상품 비교 탭 전용 스타일 (신규) */
+/* ---------------------------------- */
+.compare-selection-list ul {
+    list-style: none;
+    padding: 0;
+}
+.compare-selection-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+.compare-selection-list .post-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.compare-checkbox {
+    margin-right: 15px; 
+    transform: scale(1.3);
+}
+
+/* 비교 테이블 스타일 */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    background: #fdfdfd;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+    vertical-align: top;
+}
+
+.comparison-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comparison-feature-header {
+    background-color: #2E7D32 !important;
+    color: white;
+    width: 15%; /* 항목 열의 너비 */
+    text-align: left !important;
+}
+
+.comparison-desc-cell {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* css/mypage.css 파일에 추가 */
+
+/* 초기 상태: 댓글과 비교 콘텐츠는 숨김 */
+#contentComments,
+#contentCompare {
+    display: none;
+}

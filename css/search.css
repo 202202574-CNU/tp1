@@ -1,0 +1,18 @@
+/* css/search.css */
+.search-header {
+    background: white;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.search-keyword {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.result-msg {
+    color: #666;
+    margin-top: 10px;
+}

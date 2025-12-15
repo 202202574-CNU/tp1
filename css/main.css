@@ -1,0 +1,110 @@
+/* css/main.css */
+
+/* 히어로 섹션 (검색창 있는 큰 영역) */
+.hero-section {
+    background-color: #e8f5e9;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1b5e20;
+}
+
+/* 검색창 스타일 */
+.search-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 5px;
+}
+
+.search-box input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* 카메라 아이콘 버튼 */
+.btn-camera {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #666;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-camera:hover {
+    color: #2E7D32;
+}
+
+.btn-search {
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 최근 게시물 섹션 */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개씩 나열 */
+    gap: 20px;
+}
+
+.post-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.post-img {
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+    object-fit: cover;
+}
+
+.post-info {
+    padding: 15px;
+}
+
+.post-price {
+    font-weight: bold;
+    color: #2E7D32;
+    font-size: 18px;
+}
+
+.post-title {
+    font-size: 16px;
+    margin: 5px 0;
+}
